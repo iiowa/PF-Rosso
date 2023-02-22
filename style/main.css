@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----------------------------------body----------------------------------*/
+body{
+    
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333333;
+    color: aliceblue;
+}
+
+/*----------------------------------header----------------------------------*/ 
+
+    h1 {
+    text-align: center;
+    color: rgb(68, 0, 0);
+    font-size: 16px;
+    background-color: rgb(189, 189, 189);
+    padding: 5px;
+    margin-bottom: 0px;
+    }
+    
+    .header-contenedor nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .header-lista {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 1%;
+    overflow: hidden;
+    background-color: #333333;
+    }
+    
+    .navbar a{
+    text-decoration: none;
+    color: aliceblue;
+    }
+
+    .navbar a:nth-child(2) a:hover {
+        background-color: #111111;
+    }
+
+       
+  /*----------------------------------nav----------------------------------*/ 
+    .navbar .logo {
+    width:70px;height:70px;
+    }
+
+    nav a:hover {
+        background-color: #000;
+    }
+
+
+/*----------------------------------carrusel----------------------------------*/
+
+.carrousel{
+    width: 100%;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+#itemCarrousel-1{
+    background-image: url(../imgs/nuevos-lanzamientos.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#itemCarrousel-2{
+    background-image: url(../imgs/mas-vendido.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#itemCarrousel-3{
+    background-image: url(../imgs/rebajas.png);    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
+}
+
+/*----------------------------------seccion productos inicio----------------------------------*/
+.productos-inicio-container .ver-todos {
+  font-size: 10px;
+  text-decoration: none;
+  color: aliceblue ;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .productos-inicio-container .slipknot-hoodie {
+    width: 100%;
+  }
+  .productos-inicio-container .metal-remera {
+    width: 100%;
+  }
+
+  .productos-inicio-container .gojira-remera {
+    width: 100%;
+  }
+
+/*----------------------------------Productos----------------------------------*/
+.productos-lista a{
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+
+/*----------------------------------Contacto----------------------------------*/
+main .contacto {
+    text-align: center;
+
+}
+
+/*----------------------------------Nosotros----------------------------------*/
+main .acerca-de-nosotros {
+    text-align: center;
+}
+
+.acerca-de-nosotros .ubicacion {
+width: 50%;
+}
+
+
+/*----------------------------------Footer----------------------------------*/
+footer {
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    background-color: gray;
+
+}
+
+.footer-contenedor a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.mb-4 {
+    margin-bottom: 0px !important;
+}
+
+.footer-contenedor{
+   text-align: center;
+    
+}
+.politica-de-cambio {
+    text-align: center;
+}
