@@ -68,28 +68,29 @@ h1 {
   color: aliceblue ;
 }
 
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  }
-  
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .productos-inicio-container .slipknot-hoodie {
-    width: 100%;
-  }
-  .productos-inicio-container .metal-remera {
-    width: 100%;
-  }
+.productos-inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .productos-inicio-container .gojira-remera {
+.productos-inicio img {
+  padding: 3%;
+  width: 850px;
+  height: 450px;
+  
+}
+  
+.productos-inicio-container .slipknot-hoodie {
     width: 100%;
-  }
+}
+.productos-inicio-container .metal-remera {
+    width: 100%;
+}
+
+.productos-inicio-container .gojira-remera {
+    width: 100%;
+} 
 
 /*----------------------------------Productos----------------------------------*/
 .productos-lista a{
@@ -101,13 +102,13 @@ h1 {
 
 /*----------------------------------Contacto----------------------------------*/
 main .contacto {
-    text-align: center;
+ text-align: center;
 
 }
 
 /*----------------------------------Nosotros----------------------------------*/
 main .acerca-de-nosotros {
-    text-align: center;
+  text-align: center;
 }
 
 .acerca-de-nosotros .ubicacion {
