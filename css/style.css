@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*----------------------------------BODY----------------------------------*/
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #212429;
+  color: aliceblue;
+}
+
+/*----------------------------------HEADER----------------------------------*/
+h1 {
+  text-align: center;
+  color: rgb(68, 0, 0);
+  font-size: 16px;
+  background-color: rgb(189, 189, 189);
+  padding: 5px;
+  margin-bottom: 0px;
+}
+
+.buscador {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-right: 1%;
+}
+
+.buscar {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  transition: 0.3s;
+  width: 0;
+}
+
+.boton-buscador {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 480px) {
+  .buscador:hover > .buscar {
+    width: 190px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .buscador:hover > .buscar {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .buscador:hover > .buscar {
+    width: 400px;
+  }
+}
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+/*----------------------------------PRODUCTOS-INICIO----------------------------------*/
+.ver-todos {
+  font-size: 10px;
+  text-decoration: none;
+  color: aliceblue;
+  bottom: 2%;
+}
+
+.productos-ver-todo {
+  padding: 0.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0%;
+}
+
+.productos-ver-todo h3 {
+  margin-bottom: 0%;
+}
+
+.productos-prev {
+  width: 350px;
+}
+
+/*----------------------------------PRODUCTOS----------------------------------*/
+.productos-lista a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+/*----------------------------------CONTACTO----------------------------------*/
+main .contacto {
+  text-align: center;
+}
+
+/*----------------------------------NOSOTROS----------------------------------*/
+main .acerca-de-nosotros {
+  text-align: center;
+}
+
+.acerca-de-nosotros .ubicacion {
+  width: 50%;
+}
+
+/*----------------------------------FOOTER----------------------------------*/
+footer {
+  left: 0;
+  bottom: 0;
+  align-items: center;
+  background-color: gray;
+}
+
+.footer-contenedor a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.mb-4 {
+  margin-bottom: 0px !important;
+}
+
+.footer-contenedor {
+  text-align: center;
+}
+
+.politica-de-cambio {
+  text-align: center;
+}
+
+/*---------------------------------COMPRAR---------------------------------*/
+.main {
+  padding-top: 1%;
+}
+
+/*# sourceMappingURL=style.css.map */
