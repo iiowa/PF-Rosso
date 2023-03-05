@@ -42,21 +42,6 @@ h1 {
   color: white;
 }
 
-@media screen and (min-width: 480px) {
-  .buscador:hover > .buscar {
-    width: 190px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .buscador:hover > .buscar {
-    width: 300px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .buscador:hover > .buscar {
-    width: 400px;
-  }
-}
 .logo {
   width: 40px;
   height: 40px;
@@ -84,6 +69,7 @@ h1 {
 
 .productos-prev {
   width: 350px;
+  margin-top: 4%;
 }
 
 /*----------------------------------PRODUCTOS----------------------------------*/
@@ -125,15 +111,38 @@ footer {
 
 .footer-contenedor {
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 4%;
 }
 
 .politica-de-cambio {
+  font-size: 100%;
   text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 /*---------------------------------COMPRAR---------------------------------*/
 .main {
   padding-top: 1%;
+}
+
+/*---------------------------------MEDIA---------------------------------*/
+@media screen and (min-width: 480px) {
+  .buscador:hover > .buscar {
+    width: 190px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .buscador:hover > .buscar {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .buscador:hover > .buscar {
+    width: 400px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
