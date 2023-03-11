@@ -10,6 +10,10 @@ body {
   color: aliceblue;
 }
 
+h2 {
+  text-align: center;
+}
+
 /*----------------------------------HEADER----------------------------------*/
 h1 {
   text-align: center;
@@ -77,13 +81,18 @@ h1 {
   text-decoration: none;
 }
 /*----------------------------------CONTACTO----------------------------------*/
-main .contacto {
+.contacto {
   text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 /*----------------------------------NOSOTROS----------------------------------*/
-main .acerca-de-nosotros {
+.acerca-de-nosotros {
+  display: grid;
   text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .acerca-de-nosotros .ubicacion {
@@ -126,7 +135,7 @@ footer {
   padding-top: 1%;
 }
 
-/*---------------------------------MEDIA---------------------------------*/
+/*---------------------------------MEDIA-QUERIES---------------------------------*/
 @media screen and (min-width: 480px) {
   .buscador:hover > .buscar {
     width: 190px;
