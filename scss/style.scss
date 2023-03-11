@@ -1,80 +1,20 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/*----------------------------------BODY----------------------------------*/
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #212429;
-  color: aliceblue;
-}
-
-h1 {
-  text-align: center;
-  color: rgb(68, 0, 0);
-  font-size: 16px;
-  background-color: rgb(189, 189, 189);
-  padding: 5px;
-  margin-bottom: 0px;
-}
-
-h2 {
-  text-align: center;
-}
+@import "default";
+@import "body";
+@import "tamaño";
+@import "buscador";
+@import "productos";
+@import "footer";
+@import "comprar";
 
 /*----------------------------------HEADER----------------------------------*/
-.buscador {
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  padding-right: 1%;
-}
-
-.buscar {
-  border: none;
-  background: none;
-  outline: none;
-  color: white;
-  transition: 0.3s;
-  width: 0;
-}
-
-.boton-buscador {
-  text-decoration: none;
-  color: white;
-}
 
 .logo {
   width: 40px;
   height: 40px;
 }
 
-/*----------------------------------PRODUCTOS-INICIO----------------------------------*/
-
-.productos-prev {
-  width: 100%;
-  margin-top: 4%;
-}
-
-/*----------------------------------PRODUCTOS----------------------------------*/
-.productos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.ir-productos {
-  width: 25em;
-  transition: width 0.5s, height 0.5s;
-}
-
-.ir-productos:hover {
-  width: 26em;
-}
-
 /*----------------------------------CONTACTO----------------------------------*/
+
 .contacto {
   text-align: center;
   padding-left: 20%;
@@ -82,135 +22,64 @@ h2 {
 }
 
 /*----------------------------------NOSOTROS----------------------------------*/
+
 .acerca-de-nosotros {
   display: grid;
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
 }
-
 .ubicacion {
-  width: 100%;
+  width: $myWidth;
 }
 
-/*----------------------------------FOOTER----------------------------------*/
-footer {
-  left: 0;
-  bottom: 0;
-  align-items: center;
-  background-color: gray;
-}
-
-.footer-contenedor a {
-  text-decoration: none;
-  color: aliceblue;
-}
-
-.mb-4 {
-  margin-bottom: 0px !important;
-}
-
-.footer-contenedor {
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-  padding-left: 4%;
-}
-
-.politica-de-cambio {
-  font-size: 100%;
-  text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-.text-center {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-/*---------------------------------COMPRAR---------------------------------*/
-.main {
-  padding-top: 1%;
-}
-
-.grid-container {
-  display: grid;
-  align-items: center;
-  justify-content: space-around;
-  grid-template-areas:
-    "col-1 col-1 col-1 col-1"
-    "col-2 col-2 col-3 col-3"
-    "col-2 col-2 col-4 col-4";
-}
-
-.col-1 {
-  grid-area: col-1;
-  width: 100%;
-  padding-bottom: 2%;
-}
-.col-2 {
-  grid-area: col-2;
-  width: 100%;
-}
-.col-3 {
-  grid-area: col-3;
-  width: 100%;
-}
-.col-4 {
-  grid-area: col-4;
-  width: 100%;
-}
 /*---------------------------------MEDIA-QUERIES---------------------------------*/
+
 @media screen and (min-width: 320px) {
   .productos-prev {
-    width: 100%;
+    width: $myWidth;
   }
   .ir-productos {
     width: 15em;
   }
 }
-
 @media screen and (min-width: 375px) {
   .productos-prev {
-    width: 100%;
+    width: $myWidth;
   }
   .ir-productos {
     width: 15em;
   }
 }
-
 @media screen and (min-width: 425px) {
   .buscador:hover > .buscar {
     width: 190px;
   }
   .productos-prev {
-    width: 100%;
+    width: $myWidth;
   }
   .ir-productos {
     width: 20em;
   }
 }
-
 @media screen and (min-width: 768px) {
   .buscador:hover > .buscar {
     width: 300px;
   }
   .productos-prev {
-    width: 100%;
+    width: $myWidth;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .buscador:hover > .buscar {
     width: 400px;
   }
   .productos-prev {
-    width: 100%;
+    width: $myWidth;
   }
 }
-
 @media screen and (min-width: 2560px) {
   .productos-prev {
-    width: 100%;
+    width: $myWidth;
   }
 }

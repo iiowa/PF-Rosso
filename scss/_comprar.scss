@@ -1,0 +1,30 @@
+.main {
+  padding-top: 1%;
+}
+
+.grid-container {
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-areas:
+    "col-1 col-1 col-1 col-1"
+    "col-2 col-2 col-3 col-3"
+    "col-2 col-2 col-4 col-4";
+  .col-1 {
+    grid-area: col-1;
+    width: $myWidth;
+    padding-bottom: 2%;
+  }
+  .col-2 {
+    grid-area: col-2;
+    width: $myWidth;
+  }
+  .col-3 {
+    grid-area: col-3;
+    width: $myWidth;
+  }
+  .col-4 {
+    grid-area: col-4;
+    width: $myWidth;
+  }
+}
