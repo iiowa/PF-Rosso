@@ -1,0 +1,19 @@
+.buscador {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-right: 1%;
+
+  .buscar {
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    transition: 0.3s;
+    width: 0;
+  }
+  .boton-buscador {
+    text-decoration: none;
+    color: white;
+  }
+}

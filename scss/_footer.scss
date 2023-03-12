@@ -1,0 +1,32 @@
+footer {
+  left: 0;
+  bottom: 0;
+  align-items: center;
+  background-color: gray;
+
+  .mb-4 {
+    margin-bottom: 0px !important;
+  }
+
+  .footer-contenedor {
+    a {
+      text-decoration: none;
+      color: aliceblue;
+    }
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 4%;
+
+    .politica-de-cambio {
+      font-size: 100%;
+      text-align: center;
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+  }
+
+  .text-center {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}

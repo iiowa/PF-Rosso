@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-/*----------------------------------BODY----------------------------------*/
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #212429;
@@ -24,15 +23,13 @@ h2 {
   text-align: center;
 }
 
-/*----------------------------------HEADER----------------------------------*/
 .buscador {
   display: flex;
   justify-content: end;
   align-items: end;
   padding-right: 1%;
 }
-
-.buscar {
+.buscador .buscar {
   border: none;
   background: none;
   outline: none;
@@ -40,24 +37,25 @@ h2 {
   transition: 0.3s;
   width: 0;
 }
-
-.boton-buscador {
+.buscador .boton-buscador {
   text-decoration: none;
   color: white;
 }
 
-.logo {
-  width: 40px;
-  height: 40px;
+.productos-ver-todo {
+  text-align: center;
+  padding: 1%;
+}
+.productos-ver-todo a {
+  text-decoration: underline white;
+  color: white;
 }
 
-/*----------------------------------PRODUCTOS-INICIO----------------------------------*/
 .productos-prev {
   width: 100%;
   margin-top: 4%;
 }
 
-/*----------------------------------PRODUCTOS----------------------------------*/
 .productos {
   display: flex;
   flex-direction: column;
@@ -74,61 +72,35 @@ h2 {
   width: 26em;
 }
 
-/*----------------------------------CONTACTO----------------------------------*/
-.contacto {
-  text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-/*----------------------------------NOSOTROS----------------------------------*/
-.acerca-de-nosotros {
-  display: grid;
-  text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-.ubicacion {
-  width: 100%;
-}
-
-/*----------------------------------FOOTER----------------------------------*/
 footer {
   left: 0;
   bottom: 0;
   align-items: center;
   background-color: gray;
 }
-
-.footer-contenedor a {
-  text-decoration: none;
-  color: aliceblue;
-}
-
-.mb-4 {
+footer .mb-4 {
   margin-bottom: 0px !important;
 }
-
-.footer-contenedor {
+footer .footer-contenedor {
   text-align: center;
   display: flex;
   justify-content: space-around;
   padding-left: 4%;
 }
-
-.politica-de-cambio {
+footer .footer-contenedor a {
+  text-decoration: none;
+  color: aliceblue;
+}
+footer .footer-contenedor .politica-de-cambio {
   font-size: 100%;
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
 }
-
-.text-center {
+footer .text-center {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/*---------------------------------COMPRAR---------------------------------*/
 .main {
   padding-top: 1%;
 }
@@ -139,25 +111,58 @@ footer {
   justify-content: space-around;
   grid-template-areas: "col-1 col-1 col-1 col-1" "col-2 col-2 col-3 col-3" "col-2 col-2 col-4 col-4";
 }
-
-.col-1 {
+.grid-container .col-1 {
   grid-area: col-1;
   width: 100%;
   padding-bottom: 2%;
 }
-
-.col-2 {
+.grid-container .col-2 {
   grid-area: col-2;
   width: 100%;
 }
-
-.col-3 {
+.grid-container .col-3 {
   grid-area: col-3;
   width: 100%;
 }
-
-.col-4 {
+.grid-container .col-4 {
   grid-area: col-4;
+  width: 100%;
+}
+
+.contacto {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.acerca-de-nosotros {
+  display: grid;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.acerca-de-nosotros {
+  display: grid;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.politica-de-cambio {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+/*----------------------------------HEADER----------------------------------*/
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+/*----------------------------------NOSOTROS----------------------------------*/
+.ubicacion {
   width: 100%;
 }
 
