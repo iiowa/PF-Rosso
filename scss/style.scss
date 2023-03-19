@@ -8,26 +8,28 @@
 @import "padding";
 
 /*----------------------------------HEADER----------------------------------*/
-
 .logo {
   width: 40px;
   height: 40px;
 }
+@mixin display-justify {
+  display: flex;
+  justify-content: initial;
+}
+
+.navbar > .container-fluid {
+  @include display-justify;
+}
 
 /*----------------------------------NOSOTROS----------------------------------*/
-
 .ubicacion {
   width: $myWidth;
 }
-
 /*---------------------------------MEDIA-QUERIES---------------------------------*/
 
 @media screen and (min-width: 320px) {
   .productos-prev {
     width: $myWidth;
-  }
-  .ir-productos {
-    width: 15em;
   }
 }
 @media screen and (min-width: 375px) {
@@ -38,31 +40,52 @@
     width: 15em;
   }
 }
-@media screen and (min-width: 425px) {
-  .buscador:hover > .buscar {
-    width: 190px;
-  }
-  .productos-prev {
-    width: $myWidth;
+@media screen and (max-width: 425px) {
+  .row {
+    display: flex;
+    flex-direction: column;
   }
   .ir-productos {
-    width: 20em;
+    width: 15em;
+  }
+  .footer-contenedor {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .productos-comprar {
+      width: 20em;
+    }
+  }
+}
+@media screen and (min-width: 425px) {
+  .productos-prev {
+    width: $myWidth;
   }
 }
 @media screen and (min-width: 768px) {
-  .buscador:hover > .buscar {
-    width: 300px;
-  }
   .productos-prev {
     width: $myWidth;
+  }
+  .container-fluid {
+    padding-right: 0%;
+  }
+  .productos-comprar {
+    width: 20em;
+  }
+  .productos-comprar {
+    width: 20em;
   }
 }
 @media screen and (min-width: 1024px) {
-  .buscador:hover > .buscar {
-    width: 400px;
-  }
   .productos-prev {
     width: $myWidth;
+  }
+  .productos-comprar {
+    width: 30em;
   }
 }
 @media screen and (min-width: 2560px) {

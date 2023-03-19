@@ -34,7 +34,6 @@ h2 {
   background: none;
   outline: none;
   color: white;
-  transition: 0.3s;
   width: 0;
 }
 .buscador .boton-buscador {
@@ -76,7 +75,6 @@ footer {
   left: 0;
   bottom: 0;
   align-items: center;
-  background-color: gray;
 }
 footer .mb-4 {
   margin-bottom: 0px !important;
@@ -161,6 +159,11 @@ footer .text-center {
   height: 40px;
 }
 
+.navbar > .container-fluid {
+  display: flex;
+  justify-content: initial;
+}
+
 /*----------------------------------NOSOTROS----------------------------------*/
 .ubicacion {
   width: 100%;
@@ -171,9 +174,6 @@ footer .text-center {
   .productos-prev {
     width: 100%;
   }
-  .ir-productos {
-    width: 15em;
-  }
 }
 @media screen and (min-width: 375px) {
   .productos-prev {
@@ -183,31 +183,52 @@ footer .text-center {
     width: 15em;
   }
 }
-@media screen and (min-width: 425px) {
-  .buscador:hover > .buscar {
-    width: 190px;
-  }
-  .productos-prev {
-    width: 100%;
+@media screen and (max-width: 425px) {
+  .row {
+    display: flex;
+    flex-direction: column;
   }
   .ir-productos {
+    width: 15em;
+  }
+  .footer-contenedor {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .grid-container .productos-comprar {
     width: 20em;
   }
 }
-@media screen and (min-width: 768px) {
-  .buscador:hover > .buscar {
-    width: 300px;
-  }
+@media screen and (min-width: 425px) {
   .productos-prev {
     width: 100%;
   }
 }
-@media screen and (min-width: 1024px) {
-  .buscador:hover > .buscar {
-    width: 400px;
-  }
+@media screen and (min-width: 768px) {
   .productos-prev {
     width: 100%;
+  }
+  .container-fluid {
+    padding-right: 0%;
+  }
+  .productos-comprar {
+    width: 20em;
+  }
+  .productos-comprar {
+    width: 20em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .productos-prev {
+    width: 100%;
+  }
+  .productos-comprar {
+    width: 30em;
   }
 }
 @media screen and (min-width: 2560px) {
